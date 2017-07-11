@@ -17,21 +17,16 @@ class Navbar extends Component {
                             <img src={require("../../assets/Navbar/logo.png")} alt="Hueprint logo" height="32px" width="32px"/>
                         </a>
                         </div>
-                        <div className="collapse navbar-collapse navbar-inner text-center" id="myNavbar">
+                        <div className="collapse navbar-collapse navbar-inner text-center navbar-right" id="myNavbar">
                             <ul className="nav navbar-nav text-center" id="elements">
                                 <li><a href="#">CONÓCENOS</a></li>
                                 <li><a href="#">HUELLAS</a></li>
                                 <li><a href="#">SERVICIOS</a></li> 
                                 <li><a href="#">AYUDA</a></li> 
-                            </ul>
-                            <ul className="nav navbar-nav navbar-right text-center hidden-xs">
-                                <li  style={{clear: "both"}}><a href="#"><img src={require('../../assets/Navbar/lupa.png')}  height="25px" width="25px" alt="Buscar"/></a></li>
-                               <li><a href="#"><img src={require('../../assets/Navbar/planeta.png')}  height="25px" width="25px" alt="Buscar"/></a></li>
-                            </ul>
-                            <ul className="nav navbar-nav navbar-right text-center visible-xs">
                                 <li><a href="#"><img src={require('../../assets/Navbar/lupa.png')}  height="25px" width="25px" alt="Buscar"/> BUSCAR</a></li>
-                               <li><a href="#"><img src={require('../../assets/Navbar/planeta.png')}  height="25px" width="25px" alt="Traducir"/> TRADUCIR</a></li>
+                                <li><a href="#"><img src={require('../../assets/Navbar/planeta.png')}  height="25px" width="25px" alt="Traducir"/> TRADUCIR</a></li>
                             </ul>
+                          
                         </div>
                     </div>
                 </nav>

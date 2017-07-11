@@ -28,7 +28,11 @@ nav {
 }
 
 .navbar.navbar-default.center .collapse.navbar-collapse.navbar-inner.in>ul {
-    display: inline-block;
+    display: block;
+}
+
+.navbar.navbar-default.center .collapse.navbar-collapse.navbar-inner.in>ul>li {
+    border: 1px solid white;
 }
 
 .navbar.navbar-default.center .collapse.navbar-collapse.navbar-inner.in>ul.navbar-right {
