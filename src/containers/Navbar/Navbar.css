@@ -1,5 +1,10 @@
 nav {
     background-color: #ff5400 !important;
+    z-index: 9999;
+}
+
+.navbar {
+    margin-bottom: 0px !important;
 }
 
 /*.navbar.center .navbar-inner {
