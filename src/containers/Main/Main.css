@@ -1,0 +1,102 @@
+/* Sección principal */
+.main {
+    background-image: url('../../assets/Main/logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    margin-top: -55px;
+    z-index: -999;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* Wallpaper de la sección de caracteristicas*/
+.burbujas {
+    background-image: url('../../assets/Main/wallpaper.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+h2, h3, h4 {
+    color: #ff5400;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Seccion "Trabajamos sc"*/
+.caracteristicas {
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.thumbnail {
+    border: none;
+}
+
+
+
+/* Seccion botón de Huellas*/
+.huellas {
+    padding: 25px 120px;
+    color: white !important;
+    background-color: #ff5400;
+}
+
+span.boton {
+    margin: 0 auto;
+    text-align: center;
+    display: table;
+    background-color: #119B12;
+    border-radius: 25px 25px;
+    color: white;
+    padding: 5px 10px;
+}
+
+span.boton>a{
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+
+}
+
+/* Sección de Testimonios*/
+img.testimonio {
+  padding: 35px 80px;
+}
+
+p.testimonio {
+  font-size: 52px;
+  color: #ff5400;
+  font-weight: bolder;
+  padding-top: 70px;
+  text-align: center;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 320px) {
+
+  .huellas {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  p.testimonio {
+    padding-top: 25px !important;
+  }
+
+  div.testimonio {
+    padding-top: 0px !important;
+  }
+
+}
