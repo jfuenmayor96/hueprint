@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import "./Navbar.css";
 
 class Navbar extends Component {
@@ -11,7 +12,7 @@ class Navbar extends Component {
                         <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                             <span className="icon-bar"></span>
                             <span className="icon-bar"></span>
-                            <span className="icon-bar"></span> 
+                            <span className="icon-bar"></span>
                         </button>
                         <a className="navbar-brand" href="#">
                             <img src={require("../../assets/Navbar/logo.png")} alt="Hueprint logo" height="32px" width="32px"/>
@@ -19,14 +20,14 @@ class Navbar extends Component {
                         </div>
                         <div className="collapse navbar-collapse navbar-inner text-center navbar-right" id="myNavbar">
                             <ul className="nav navbar-nav text-center" id="elements">
-                                <li><a href="#">CONÓCENOS</a></li>
-                                <li><a href="#">HUELLAS</a></li>
-                                <li><a href="#">SERVICIOS</a></li> 
-                                <li><a href="#">AYUDA</a></li> 
-                                <li><a href="#"><img src={require('../../assets/Navbar/lupa.png')}  height="25px" width="25px" alt="Buscar"/> BUSCAR</a></li>
-                                <li><a href="#"><img src={require('../../assets/Navbar/planeta.png')}  height="25px" width="25px" alt="Traducir"/> TRADUCIR</a></li>
+                                <li><Link to="/conocenos">CONÓCENOS</Link></li>
+                                <li><Link to="/huellas">HUELLAS</Link></li>
+                                <li><Link to="/servicios">SERVICIOS</Link></li>
+                                <li><Link to="/ayuda">AYUDA</Link></li>
+                                <li><Link to="/buscar"><img src={require('../../assets/Navbar/lupa.png')}  height="25px" width="25px" alt="Buscar"/> BUSCAR</Link></li>
+                                <li><Link to="/traducir"><img src={require('../../assets/Navbar/planeta.png')}  height="25px" width="25px" alt="Traducir"/> TRADUCIR</Link></li>
                             </ul>
-                          
+
                         </div>
                     </div>
                 </nav>
@@ -36,4 +37,4 @@ class Navbar extends Component {
 }
 
 
-export default Navbar;  
+export default Navbar;
