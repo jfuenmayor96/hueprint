@@ -1,0 +1,29 @@
+
+
+div>footer>div>h3 {
+  color: white !important;
+  border-bottom-color: #ff5400;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+div>footer>div>h4 {
+  color: white;
+}
+
+footer>div>h3, footer>div>h4 {
+  text-align: left;
+}
+
+footer {
+  padding: 0px 25px;
+}
+
+.burbujas {
+  background-image: url('../../assets/Main/wallpaper.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+}

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './App.css';
-import Navbar  from "./containers/Navbar/Navbar";
+import Footer from "./containers/Footer/Footer";
 import Main from "./containers/Main/Main";
+import Navbar  from "./containers/Navbar/Navbar";
 import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
-
+import './App.css';
 
 class App extends Component {
   render() {
@@ -11,8 +11,9 @@ class App extends Component {
       <div>
         <Navbar/>
         <Main/>
+        <Footer/>
       </div>
-      
+
     );
   }
 }
