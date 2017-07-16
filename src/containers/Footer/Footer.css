@@ -11,6 +11,15 @@ div>footer>div>h4 {
   color: white;
 }
 
+i {
+  color: #ff5400;
+}
+
+span {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+}
+
 footer>div>h3, footer>div>h4 {
   text-align: left;
 }
