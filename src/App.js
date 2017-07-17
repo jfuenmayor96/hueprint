@@ -14,7 +14,7 @@ class App extends Component {
         {/* RUTAS */}
         <Switch>
           <Route exact path="/hueprint/" component={Main}/>
-          <Route path="/hueprint/conocenos" component={Conocenos}/>
+          <Route path="/hueprint/conocenos/" component={Conocenos}/>
         </Switch>
         <Footer/>
       </div>
