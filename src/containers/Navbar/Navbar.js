@@ -14,7 +14,7 @@ class Navbar extends Component {
                             <span className="icon-bar"></span>
                             <span className="icon-bar"></span>
                         </button>
-                        <Link className="navbar-brand" to="/hueprint/">
+                        <Link className="navbar-brand" to="/">
                             <img src={require("../../assets/Navbar/logo.png")} alt="Hueprint logo" height="32px" width="32px"/>
                         </Link>
                         </div>
