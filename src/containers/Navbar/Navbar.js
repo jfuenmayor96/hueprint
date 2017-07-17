@@ -14,13 +14,13 @@ class Navbar extends Component {
                             <span className="icon-bar"></span>
                             <span className="icon-bar"></span>
                         </button>
-                        <Link className="navbar-brand" to="/">
+                        <Link className="navbar-brand" to="/hueprint/">
                             <img src={require("../../assets/Navbar/logo.png")} alt="Hueprint logo" height="32px" width="32px"/>
                         </Link>
                         </div>
                         <div className="collapse navbar-collapse navbar-inner text-center navbar-right" id="myNavbar">
                             <ul className="nav navbar-nav text-center" id="elements">
-                                <li><Link to="/conocenos">CONÓCENOS</Link></li>
+                                <li><Link to="/hueprint/conocenos">CONÓCENOS</Link></li>
                                 <li><Link to="/huellas">HUELLAS</Link></li>
                                 <li><Link to="/servicios">SERVICIOS</Link></li>
                                 <li><Link to="/ayuda">AYUDA</Link></li>

@@ -11,9 +11,10 @@ class App extends Component {
     return (
       <div>
         <Navbar/>
+        {/* RUTAS */}
         <Switch>
-          <Route exact path="/" component={Main}/>
-          <Route path="/conocenos" component={Conocenos}/>
+          <Route exact path="/hueprint/" component={Main}/>
+          <Route path="/hueprint/conocenos" component={Conocenos}/>
         </Switch>
         <Footer/>
       </div>
