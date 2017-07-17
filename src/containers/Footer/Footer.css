@@ -25,7 +25,7 @@ footer>div>h3, footer>div>h4 {
 }
 
 footer {
-  padding: 0px 25px;
+  padding: 0px 30px;
 }
 
 .burbujas {
@@ -35,4 +35,5 @@ footer {
   background-size: cover;
   background-attachment: fixed;
   z-index: -1;
+  margin: 0px 0px;
 }
