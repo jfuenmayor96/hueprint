@@ -13,8 +13,8 @@ class App extends Component {
         <Navbar/>
         {/* RUTAS */}
         <Switch>
-          <Route exact path="/hueprint/" component={Main}/>
-          <Route path="/hueprint/conocenos" component={Conocenos}/>
+          <Route exact path="/" component={Main}/>
+          <Route path="/conocenos" component={Conocenos}/>
         </Switch>
         <Footer/>
       </div>
