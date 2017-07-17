@@ -20,7 +20,7 @@ class Navbar extends Component {
                         </div>
                         <div className="collapse navbar-collapse navbar-inner text-center navbar-right" id="myNavbar">
                             <ul className="nav navbar-nav text-center" id="elements">
-                                <li><Link to="/hueprint/conocenos">CONÓCENOS</Link></li>
+                                <li><Link to="/conocenos">CONÓCENOS</Link></li>
                                 <li><Link to="/huellas">HUELLAS</Link></li>
                                 <li><Link to="/servicios">SERVICIOS</Link></li>
                                 <li><Link to="/ayuda">AYUDA</Link></li>
