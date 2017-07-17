@@ -6,12 +6,12 @@ class Main extends Component {
         return (
             <div>
                 <div className="container-fluid" style={{paddingLeft: "0px", paddingRight: "0px"}}>
-                    <div className="row" style={{marginRight: "0px"}}>
+                    <div className="row" style={{marginRight: "0px", marginLeft: "0px"}}>
                         <div className="main col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div style={{ paddingTop: "25px",  marginRight: "0px" }}>
-                                <img className="img-responsive" height="90%" src={require("../../assets/Main/bolsa.png")} alt="" />
+                                <img className="img-responsive" height="90%" src={require("../../assets/Main/bolsa.png")} alt="Logo de Hueprint" />
                             </div>
-                            <div  className="col-lg-12 col-md-12 col-sm-12 col-xs-12" style={{backgroundColor: "rgba(255, 255, 255, 0.8)"}}>
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12" style={{backgroundColor: "rgba(255, 255, 255, 0.8)"}}>
                                 <h2 style={{ marginTop: "0px"}}>Impulsa tu marca siendo parte de esta gran comunidad para comercializar, innovar e interactuar</h2>
                             </div>
                         </div>
