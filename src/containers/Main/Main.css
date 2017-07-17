@@ -4,7 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: center;
     height: 100vh;
     margin-top: -55px;
     z-index: -999;
@@ -13,6 +13,8 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
 }
 
 /* Wallpaper de la sección de caracteristicas*/
@@ -22,12 +24,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    z-index: -1;
+    z-index: -99999;
 }
 
 h2, h3, h4 {
     color: #ff5400;
-    font-weight: bold;
     text-align: center;
 }
 
@@ -50,13 +51,14 @@ h2, h3, h4 {
     padding: 25px 120px;
     color: white !important;
     background-color: #ff5400;
+    margin: 0px 0px;
 }
 
 span.boton {
     margin: 0 auto;
     text-align: center;
     display: table;
-    background-color: #119B12;
+    background-color: #24FF00;
     border-radius: 25px 25px;
     color: white;
     padding: 5px 10px;
@@ -65,11 +67,17 @@ span.boton {
 span.boton>a{
     color: white;
     font-size: 2em;
-    font-weight: bold;
+}
 
+span.boton>a:hover {
+  text-decoration: none;
 }
 
 /* Sección de Testimonios*/
+.testimonio {
+  margin: 0px 0px;
+}
+
 img.testimonio {
   padding: 35px 80px;
 }
@@ -77,7 +85,6 @@ img.testimonio {
 p.testimonio {
   font-size: 52px;
   color: #ff5400;
-  font-weight: bolder;
   padding-top: 70px;
   text-align: center;
 }
