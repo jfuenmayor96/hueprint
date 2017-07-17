@@ -26,6 +26,7 @@ footer>div>h3, footer>div>h4 {
 
 footer {
   padding: 0px 30px;
+  border-top: 5px solid #ff5400;
 }
 
 .burbujas {
