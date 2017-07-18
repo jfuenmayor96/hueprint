@@ -55,7 +55,8 @@ h2, h3, h4 {
 }
 
 span.boton {
-    font-family: "Alegreya Small Caps";
+    font-family: "Quicksand";
+    font-weight: bold;
     margin: 0 auto;
     text-align: center;
     display: table;
@@ -88,6 +89,8 @@ p.testimonio {
   color: #ff5400;
   padding-top: 70px;
   text-align: center;
+  font-family: "Fredoka One";
+  font-weight: normal;
 }
 
 /* Media Queries */

@@ -71,7 +71,7 @@ class Main extends Component {
                     <div className="row huellas">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <h2 style={{ color: "white" }}>"En el mundo de los negocios puedes tener 1 gran oportunidad, pero si estás en Internet podrás tener 10."</h2>
-                            <h3 style={{ color: "white", textAlign: "right", fontFamily: "Alegreya Small Caps", fontWeight: "bold" }}>-HuePrint-</h3>
+                            <h3 style={{ color: "white", textAlign: "right", fontFamily: "Quicksand", fontWeight: "bold" }}>-HuePrint-</h3>
 
                             <h3 style={{ color: "white" }}>Conoce nuestras huellas y marca la tuya en esta comunidad virtual</h3>
 
@@ -80,8 +80,6 @@ class Main extends Component {
                     </div>
 
                     <div className="row testimonio">
-
-
                       <p className="col-lg-3 col-md-12 col-sm-12 col-xs-12 testimonio">Testimonios</p>
                       <img className="col-lg-4 col-md-12 col-sm-12 col-xs-12 testimonio img-responsive text-center" height="200px" width="200px" src={require("../../assets/Main/burbuja.png")} alt="" />
                       <img className="col-lg-4 col-md-12 col-sm-12 col-xs-12 testimonio img-responsive text-center" height="200px" width="200px" src={require("../../assets/Main/burbuja.png")} alt="" />
