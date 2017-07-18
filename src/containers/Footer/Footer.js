@@ -5,7 +5,7 @@ class Footer extends React.Component {
   render () {
     return(
       <div className="row burbujas">
-        <footer>
+        <footer style={{fontFamily: "Quicksand"}}>
             {/* Conócenos */}
             <div className="col-lg-3 col-md-3 col-sm-6 hidden-xs">
               <h3>Conócenos</h3>
@@ -28,10 +28,10 @@ class Footer extends React.Component {
             {/* Socializa con nosotros */}
             <div className="col-lg-3 col-md-3 col-sm-6 hidden-xs">
               <h3>Socializa con nosotros</h3>
-              <h4><i className="fa fa-instagram" aria-hidden="true"></i> @hueprint</h4>
-              <h4><i className="fa fa-twitter" aria-hidden="true"></i> @hueprint</h4>
-              <h4><i className="fa fa-facebook-official" aria-hidden="true"></i> @hueprinten</h4>
-              <h4><i className="fa fa-pinterest" aria-hidden="true"></i> Hueprint</h4>
+              <h4><a href="https://instagram.com/hueprint" alt="Instagram de Hueprint"><i className="fa fa-instagram" aria-hidden="true"></i> @hueprint</a></h4>
+              <h4><a href="https://twitter.com/hueprint" alt="Twitter de Hueprint"><i className="fa fa-twitter" aria-hidden="true"></i> @hueprint</a></h4>
+              <h4><a href="https://facebook.com/hueprinten" alt="Facebook de Hueprint"><i className="fa fa-facebook-official" aria-hidden="true"></i> @hueprinten</a></h4>
+              <h4><a href="https://pinterest.com/hueprint" alt="Pinterest de Hueprint"><i className="fa fa-pinterest" aria-hidden="true"></i> Hueprint</a></h4>
               <h4><i className="fa fa-envelope-open" aria-hidden="true"></i> hueprintinc@gmail.com</h4>
             </div>
             {/*Socializa con nosotros versión móviles*/}
