@@ -30,4 +30,11 @@ span {
 p {
   color: white;
   font-size: 1.4em;
+  font-family: "Quicksand";
+  font-weight: bold;
+}
+
+p.titulo {
+  font-family: "Fredoka One";
+  font-weight: normal;
 }
