@@ -55,6 +55,7 @@ h2, h3, h4 {
 }
 
 span.boton {
+    font-family: "Alegreya Small Caps";
     margin: 0 auto;
     text-align: center;
     display: table;
