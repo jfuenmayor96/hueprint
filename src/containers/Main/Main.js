@@ -12,7 +12,7 @@ class Main extends Component {
                                 <img className="img-responsive" height="90%" src={require("../../assets/Main/bolsa.png")} alt="Logo de Hueprint" />
                             </div>
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12" style={{backgroundColor: "rgba(255, 255, 255, 0.8)"}}>
-                                <h2 style={{ marginTop: "0px"}}>Impulsa tu marca siendo parte de esta gran comunidad para comercializar, innovar e interactuar</h2>
+                                <h2 style={{ marginTop: "0px", fontFamily: "Quicksand", fontWeight: "bold"}}>Impulsa tu marca siendo parte de esta gran comunidad para comercializar, innovar e interactuar</h2>
                             </div>
                         </div>
                     </div>
@@ -22,7 +22,7 @@ class Main extends Component {
                         <div className="col-lg-2 col-md-2 col-sm-3 col-xs-1 publicidad"></div>
 
                         <div className="col-lg-8 col-md-8 col-sm-6 col-xs-10 caracteristicas">
-                            <h2>TE OFRECEMOS</h2>
+                            <h2 style={{fontFamily: "Quicksand", fontWeight: "bold"}}>TE OFRECEMOS</h2>
                             <div style={{ paddingTop: "15px" }}>
                                 <div className="col-lg-4 thumbnail">
                                     <img className="img-responsive" src={require("../../assets/Main/alojamiento.png")} alt="Alojamiento" height="120px" width="120px" />
@@ -47,7 +47,7 @@ class Main extends Component {
                         <div className="col-lg-2 col-md-2 col-sm-3 col-xs-1 publicidad"></div>
 
                         <div className="col-lg-8 col-md-8 col-sm-6 col-xs-10 caracteristicas">
-                            <h2>TRABAJAMOS CON</h2>
+                            <h2 style={{fontFamily: "Quicksand", fontWeight: "bold"}}>TRABAJAMOS CON</h2>
                             <div style={{ paddingTop: "15px" }}>
                                 <div className="col-lg-4 thumbnail">
                                     <img className="img-responsive" src={require("../../assets/Main/ecommerce.png")} alt="Ecommerce" height="120px" width="120px" />
