@@ -22,8 +22,8 @@ class Conocenos extends React.Component {
         <div className="row burbujas" style={{display: "table"}}>
             {/*Seccion Sobre nosotros*/}
             <div style={{display: "table-row", background: "rgba(0,0,0, 0.2)"}}>
-              <div className="col-lg-5 col-md-5 visible-lg visible-md" style={{paddingTop: "30px", paddingRight: "30px"}}>
-                <div style={{paddingRight: "10px", borderRight: "3px solid #24FF00"}}>
+              <div className="col-lg-5 col-md-5 visible-lg visible-md" style={{paddingRight: "30px"}}>
+                <div style={{height: "inherit", display: "flex", flexDirection: "column", alignItems: "stretch",paddingRight: "10px", marginTop: "30px", borderRight: "3px solid #24FF00"}}>
                   <p className="titulo" style={{fontSize: "48px", textAlign: "right", marginBottom: "0px", color: "#ff5400"}}>Sobre</p>
                   <p className="titulo" style={{fontSize: "56px", textAlign: "right", color: "#24FF00"}}>Nosotros</p>
                 </div>
@@ -43,7 +43,7 @@ class Conocenos extends React.Component {
             <div style={{display: "table-row", background: "rgba(0,0,0, 0.2)"}}>
               {/*Vistas lg y md*/}
               <div className="col-lg-5 col-md-5 visible-lg visible-md" style={{paddingRight: "30px"}}>
-                <div style={{borderRight: "3px solid #24FF00", borderBottom: "3px solid #24FF00"}}>
+                <div>
                   <p className="titulo" style={{fontSize: "48px", marginBottom: "0px", textAlign: "center", color: "#ff5400"}}>Cómo</p>
                   <p className="titulo" style={{fontSize: "56px", textAlign: "center", color: "#24FF00"}}>Trabajamos</p>
                 </div>
@@ -64,7 +64,7 @@ class Conocenos extends React.Component {
             </div>
             <br/>
             {/*Seccion Nuestro impulso*/}
-            <div style={{display: "table-row", background: "rgba(0,0,0, 0.2)"}}>
+            <div style={{display: "table-row", background: "rgba(0,0,0, 0.2)", paddingBottom: "30px"}}>
               {/*Vistas sm y xs*/}
               <div className="col-sm-12 col-xs-12 visible-sm visible-xs" style={{borderBottom: "3px solid #24FF00"}}>
                 <p className="titulo" style={{fontSize: "48px", marginBottom: "0px", textAlign: "center", color: "#ff5400"}}>Nuestro</p>
@@ -74,7 +74,7 @@ class Conocenos extends React.Component {
                 <p style={{textAlign: "justify", paddingRight: "15px", paddingLeft: "15px", paddingTop: "20px", paddingBottom: "20px", marginBottom: "0px"}}>Ofrecer una vía de comercialización como apoyo a empresas y tiendas virtuales para ofrecer productos y/o servicios, cursos, empleos mientras dejan huella en el mercado. Así mismo, brindar al resto de la población otra forma para encontrar aquello que requieran con un sistema más dinámico e interactivo, brindando mayor confianza hasta crear una comunidad virtual.</p>
               </div>
               {/*Vistas lg y md*/}
-              <div className="col-lg-4 col-md-4 visible-lg visible-md" style={{paddingLeft: "30px", borderLeft: "3px solid #24FF00", borderBottom: "3px solid #24FF00"}}>
+              <div className="col-lg-4 col-md-4 visible-lg visible-md" style={{paddingLeft: "30px", borderLeft: "3px solid #24FF00", marginTop: "30px", marginBottom: "30px"}}>
                 <p className="titulo" style={{fontSize: "48px", marginBottom: "0px", textAlign: "left", color: "#ff5400"}}>Nuestro</p>
                 <p className="titulo" style={{fontSize: "56px", textAlign: "left", color: "#24FF00"}}>Impulso</p>
               </div>
