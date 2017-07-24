@@ -21,7 +21,7 @@ class Navbar extends Component {
                         <div className="collapse navbar-collapse navbar-inner text-center navbar-right" id="myNavbar">
                             <ul className="nav navbar-nav text-center" id="elements">
                                 <li><Link to="/hueprint/conocenos/">CONÓCENOS</Link></li>
-                                <li><Link to="/huellas">HUELLAS</Link></li>
+                                <li><Link to="/hueprint/huellas">HUELLAS</Link></li>
                                 <li><Link to="/servicios">SERVICIOS</Link></li>
                                 <li><Link to="/ayuda">AYUDA</Link></li>
                                 <li><Link to="/buscar"><img src={require('../../assets/Navbar/lupa.png')}  height="25px" width="25px" alt="Buscar"/> BUSCAR</Link></li>
