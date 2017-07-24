@@ -1,0 +1,35 @@
+.burbujas {
+    background-image: url('../../assets/Main/wallpaper.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -99999;
+}
+
+.categorias {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: rgba(255,255,255,0.4);
+  padding: 0px 30px;
+}
+
+div.categorias>ul>li {
+  font-size: 18px;
+}
+
+.categorias>ul>li>a {
+  color: #282929 !important;
+  font-weight: normal;
+}
+
+.publicaciones>div.contenedor {
+  padding-top: 30px;
+  border-radius: 20px;
+  background-color: white;
+  height: 500px;
+}
