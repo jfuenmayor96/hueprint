@@ -7,6 +7,14 @@
     z-index: -99999;
 }
 
+.triangulo {
+    background-image: url('../../assets/Servicios/triangulo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -99999;
+}
+
 h4 {
   color: black;
 }

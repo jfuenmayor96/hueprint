@@ -34,7 +34,7 @@ class Servicios extends React.Component {
             </div>
         </div>
 
-        <div className="row" style={{paddingTop: "30px", paddingBottom: "30px", marginLeft: "0px", marginRight: "0px"}}>
+        <div className="row triangulo" style={{paddingTop: "30px", paddingBottom: "30px", marginLeft: "0px", marginRight: "0px"}}>
           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12" style={{paddingLeft: "0px", paddingRight: "0px"}}>
             <h2 style={{fontFamily: "Fredoka One", fontWeight: "bold", letterSpacing: "2px"}}>PAGOS</h2>
             <p style={{fontSize: "18px", textAlign: "center"}}>Depósito Bancario o Transferencia</p>
