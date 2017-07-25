@@ -54,6 +54,15 @@ h2, h3, h4 {
     margin: 0px 0px;
 }
 
+div.row.huellas {
+  background-image: url('../../assets/Main/fondo-slogan.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: fixed;
+  z-index: -99999;
+}
+
 span.boton {
     font-family: "Quicksand";
     font-weight: bold;
@@ -78,6 +87,15 @@ span.boton>a:hover {
 /* Sección de Testimonios*/
 .testimonio {
   margin: 0px 0px;
+}
+
+div.row.testimonio {
+  background-image: url('../../assets/Main/fondo-testimonio.jpg');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: fixed;
+  z-index: -99999;
 }
 
 img.testimonio {
