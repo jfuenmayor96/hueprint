@@ -45,9 +45,9 @@ class Servicios extends React.Component {
             </ol>
           </div>
           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12" style={{textAlign: "center", paddingLeft: "0px", paddingRight: "0px", paddingTop: "15px"}}>
-            <img style={{paddingLeft: "15px", paddingRight: "15px", display: "inline-block"}} className="img-responsive" src={require("../../assets/Main/bancaribe.jpg")} alt="Bancaribe" width="200px"/>
-            <img style={{paddingLeft: "15px", paddingRight: "15px", display: "inline-block"}} className="img-responsive" src={require("../../assets/Main/mercantil.jpg")} alt="Banco Mercantil" width="200px"/>
-            <img style={{paddingLeft: "15px", paddingRight: "15px", display: "inline-block"}} className="img-responsive" src={require("../../assets/Main/venezuela.jpg")} alt="Banco de Venezuela" width="200px"/>
+            <img className="img-responsive pagos" src={require("../../assets/Main/bancaribe.jpg")} alt="Bancaribe"/>
+            <img className="img-responsive pagos" src={require("../../assets/Main/mercantil.jpg")} alt="Banco Mercantil"/>
+            <img className="img-responsive pagos" src={require("../../assets/Main/venezuela.jpg")} alt="Banco de Venezuela"/>
           </div>
         </div>
       </div>

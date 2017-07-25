@@ -27,8 +27,10 @@ ul {
 }
 
 img.img-responsive.pagos {
-  height: 150px !important;
   width: 250px !important;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline-block;
 }
 
 p, ol {
