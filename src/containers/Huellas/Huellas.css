@@ -31,5 +31,5 @@ div.categorias>ul>li {
   padding-top: 30px;
   border-radius: 20px;
   background-color: white;
-  height: 500px;
+  height: auto;
 }
