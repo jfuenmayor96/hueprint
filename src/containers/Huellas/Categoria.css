@@ -1,0 +1,14 @@
+h1 {
+  color: #ff5400;
+  text-align: center;
+}
+
+p {
+  color: black;
+  font-size: 1em;
+}
+
+.publicacion {
+  width: 200px !important;
+  height: 200px !important;
+}
