@@ -4,7 +4,7 @@ import Footer from "./containers/Footer/Footer";
 import Huellas from "./containers/Huellas/Huellas";
 import Main from "./containers/Main/Main";
 import Navbar  from "./containers/Navbar/Navbar";
-import {Route, Link, Switch} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import './App.css';
 
 class App extends Component {
