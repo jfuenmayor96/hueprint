@@ -35,10 +35,10 @@ class Servicios extends React.Component {
         </div>
 
         <div className="row triangulo" style={{paddingTop: "30px", paddingBottom: "30px", marginLeft: "0px", marginRight: "0px"}}>
-          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12" style={{paddingLeft: "0px", paddingRight: "0px"}}>
-            <h2 style={{fontFamily: "Fredoka One", fontWeight: "bold", letterSpacing: "2px"}}>PAGOS</h2>
-            <p style={{fontSize: "18px", textAlign: "center"}}>Depósito Bancario o Transferencia</p>
-            <ol style={{fontSize: "18px", fontWeight: "normal"}}>
+          <div className="col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-1 col-lg-8 col-md-8 col-sm-10 col-xs-10" style={{paddingLeft: "0px", paddingRight: "0px"}}>
+            <h2 style={{fontFamily: "Fredoka One", fontWeight: "bold", letterSpacing: "2px", textAlign: "left", fontSize: "36px"}}>PAGOS</h2>
+            <p style={{fontSize: "24px", textAlign: "left"}}>Depósito Bancario o Transferencia</p>
+            <ol style={{fontSize: "18px", fontWeight: "normal", paddingTop: "15px", paddingLeft: "0px"}}>
               <li>Por privacidad: Solicitar los datos para el pago directamente con nuestro equipo.</li>
               <li>Realice el depósito o transferencia en uno de los banco señalados.</li>
               <li>Enviar una foto del comprobante (voucher) de pago o una captura de pantalla de la operación al correo electrónico hueprintinc@gmail.com</li>
