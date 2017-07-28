@@ -9,12 +9,12 @@ class Categoria extends React.Component {
   }
   render () {
     return(
-      <div>
+      <div style={{backgroundColor: "white"}}>
         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <h1>{this.props.match.params.categoria}</h1>
         </div>
 
-        <div className="col-lg-4">
+        <div className="col-lg-4  col-md-4 col-sm-6 col-xs-12">
           <Link to="#" className="thumbnail">
             <img className="publicacion" src={require("../../assets/Huellas/jf.png")} alt="Imagen publicacion" height="300px" width="300px"/>
             <div style={{textAlign: "center"}}>
@@ -24,7 +24,7 @@ class Categoria extends React.Component {
             </div>
           </Link>
         </div>
-        <div className="col-lg-4">
+        <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
           <Link to="#" className="thumbnail">
             <img className="publicacion" src={require("../../assets/Huellas/jf.png")} alt="Imagen publicacion" height="300px" width="300px"/>
             <div style={{textAlign: "center"}}>
@@ -34,7 +34,7 @@ class Categoria extends React.Component {
             </div>
           </Link>
         </div>
-        <div className="col-lg-4">
+        <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
           <Link to="#" className="thumbnail">
             <img className="publicacion" src={require("../../assets/Huellas/kratos2.png")} alt="Imagen publicacion" height="300px" width="300px"/>
             <div style={{textAlign: "center"}}>
