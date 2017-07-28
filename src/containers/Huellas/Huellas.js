@@ -11,21 +11,21 @@ class Huellas extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 categorias">
-                <ul>
+                <ul style={{listStyle: "initial"}}>
                   <li><Link to={`${this.props.match.url}/Academias`}>Academias</Link></li>
                   <li><Link to={`${this.props.match.url}/Artes`}>Artes</Link></li>
                   <li><Link to={`${this.props.match.url}/Belleza y Salud`}>Belleza y Salud</Link></li>
                   <li><Link to={`${this.props.match.url}/Carros`}>Carros</Link></li>
                   <li><Link to={`${this.props.match.url}/Cursos`}>Cursos</Link></li>
                 </ul>
-                <ul>
+                <ul style={{listStyle: "initial"}}>
                   <li><Link to={`${this.props.match.url}/Deportes`}>Deportes</Link></li>
                   <li><Link to={`${this.props.match.url}/Empleos`}>Empleos</Link></li>
                   <li><Link to={`${this.props.match.url}/Entretenimiento`}>Entretenimiento</Link></li>
                   <li><Link to={`${this.props.match.url}/Gastronomía`}>Gastronomía</Link></li>
                   <li><Link to={`${this.props.match.url}/Inmuebles`}>Inmuebles</Link></li>
                 </ul>
-                <ul>
+                <ul style={{listStyle: "initial"}}>
                   <li><Link to={`${this.props.match.url}/Moda`}>Moda</Link></li>
                   <li><Link to={`${this.props.match.url}/Profesionales`}>Profesionales</Link></li>
                   <li><Link to={`${this.props.match.url}/Proyectos`}>Proyectos</Link></li>
@@ -36,12 +36,12 @@ class Huellas extends React.Component {
             </div>
 
             <div className="row publicaciones" style={{paddingTop: "30px", paddingBottom: "30px"}}>
-              <div className="col-lg-10 contenedor">
+              <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-xs-offset-1 contenedor">
                 <Switch>
                   <Route path={`${this.props.match.url}/:categoria`} component={Categoria}/>
                 </Switch>
               </div>
-              <div className="col-lg-2" style={{backgroundColor: "white", height: "417px"}}></div>
+              {/*<div className="col-lg-2" style={{backgroundColor: "white", height: "417px"}}></div>*/}
             </div>
           </div>
 

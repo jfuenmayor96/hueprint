@@ -31,5 +31,8 @@ div.categorias>ul>li {
   padding-top: 30px;
   border-radius: 20px;
   background-color: white;
-  height: auto;
+}
+
+ul {
+  list-style: circle;
 }
