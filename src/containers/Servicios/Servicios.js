@@ -33,7 +33,9 @@ class Servicios extends React.Component {
                 </div>
             </div>
         </div>
-
+        <div className="row burbujas">
+          <img className="img-responsive" src={require("../../assets/Servicios/huellas.png")} alt="Huellas" width="100%"/>
+        </div>
         <div className="row triangulo" style={{paddingTop: "30px", paddingBottom: "30px", marginLeft: "0px", marginRight: "0px"}}>
           <div className="col-lg-offset-2 col-md-offset-2 col-sm-offset-1 col-xs-offset-1 col-lg-8 col-md-8 col-sm-10 col-xs-10" style={{paddingLeft: "0px", paddingRight: "0px"}}>
             <h2 style={{fontFamily: "Fredoka One", fontWeight: "bold", letterSpacing: "2px", textAlign: "left", fontSize: "36px"}}>PAGOS</h2>
