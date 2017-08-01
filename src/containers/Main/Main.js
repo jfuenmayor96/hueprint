@@ -69,7 +69,7 @@ class Main extends Component {
 
                     {/*Huellas y quote*/}
                     <div className="row huellas">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <h2 style={{ color: "white" }}>"En el mundo de los negocios puedes tener 1 gran oportunidad, pero si estás en Internet podrás tener 10."</h2>
                             <h3 style={{ color: "white", textAlign: "right", fontFamily: "Quicksand", fontWeight: "bold" }}>-HuePrint-</h3>
 
