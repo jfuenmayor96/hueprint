@@ -5,6 +5,13 @@ import Categoria from "./Categoria";
 import "./Huellas.css";
 
 class Huellas extends React.Component {
+
+  constructor(props) {
+    super(props);
+
+  }
+
+
   render () {
     return(
       <div className="burbujas">
@@ -38,7 +45,8 @@ class Huellas extends React.Component {
             <div className="row publicaciones" style={{paddingTop: "30px", paddingBottom: "30px"}}>
               <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 col-xs-offset-1 contenedor">
                 <Switch>
-                  <Route path={`${this.props.match.url}/:categoria`} component={Categoria}/>
+                  <Route exact path={`${this.props.match.url}`} component={Categoria} />
+                  <Route path={`${this.props.match.url}/:categoria`} component={Categoria} />
                 </Switch>
               </div>
               {/*<div className="col-lg-2" style={{backgroundColor: "white", height: "417px"}}></div>*/}
