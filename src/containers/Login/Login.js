@@ -18,7 +18,19 @@ class Login extends React.Component {
    })
    })
      .then(response => response.json())
-     .then(res => console.log(res))
+     .then(res => {
+        switch (res) {
+          case "clave invalida":
+            alert("clave invalida");
+            break;
+          case "ok":
+            alert("sesion iniciada");
+            break;
+         default:
+           alert("sesion iniciada");
+           break;
+       }
+     })
      .catch(err => console.log(err));
   };
 
