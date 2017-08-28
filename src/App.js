@@ -6,6 +6,7 @@ import Main from "./containers/Main/Main";
 import Navbar  from "./containers/Navbar/Navbar";
 import Servicios from "./containers/Servicios/Servicios";
 import Login from "./containers/Login/Login";
+import Registro from "./containers/Registro/Registro";
 import {Route, Switch} from 'react-router-dom';
 import './App.css';
 
@@ -21,6 +22,7 @@ class App extends Component {
           <Route path="/hueprint/huellas" component={Huellas}/>
           <Route path="/hueprint/servicios" component={Servicios}/>
           <Route path="/hueprint/login" component={Login}/>
+          <Route path="/hueprint/registro" component={Registro}/>
         </Switch>
         <Footer/>
       </div>
