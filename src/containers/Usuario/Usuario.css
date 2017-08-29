@@ -1,0 +1,7 @@
+h2.usuario {
+  color: #FF5400 !important;
+}
+
+input.form-control.usuario, select.form-control.usuario, textarea.form-control.usuario {
+  padding: 0px 15px;
+}
