@@ -32,12 +32,26 @@ h2, h3, h4 {
     text-align: center;
 }
 
+h2.cintillo {
+  margin-top: 0px;
+  font-family: "Quicksand";
+  font-weight: bold;
+  color: #ff5400;
+}
+
 /* Seccion "Trabajamos sc"*/
 .caracteristicas {
     border-radius: 10px;
     background-color: white;
     margin-top: 25px;
     margin-bottom: 25px;
+}
+
+div.caracteristicas > h2 {
+  font-family: "Quicksand";
+  font-weight: bold;
+  color: #ff5400;
+  text-align: center;
 }
 
 .thumbnail {
