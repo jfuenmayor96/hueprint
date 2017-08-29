@@ -25,6 +25,6 @@ label {
   font-size: 15px;
 }
 
-h2 {
-  color: white;
+h2.registro {
+  color: white !important;
 }

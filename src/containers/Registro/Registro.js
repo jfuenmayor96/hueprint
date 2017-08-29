@@ -47,7 +47,7 @@ class Registro extends React.Component {
       <div>
         <div className="row burbujas" style={{height: "100vh", display: "flex", flexFlow: "row wrap", justifyContent: "center", alignItems: "center"}}>
           <div className="loginForm">
-            <h2>Registro de usuario</h2><br/>
+            <h2 className="registro">Registro de usuario</h2><br/>
               <form>
                 <div className="form-group">
                   <label htmlFor="email">Correo electrónico:</label>
