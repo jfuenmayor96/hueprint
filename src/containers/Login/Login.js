@@ -10,8 +10,9 @@ class Login extends React.Component {
 
   handleSubmit(event){
    event.preventDefault();
-   fetch('/api/login', {
+   fetch('https://hueprint.herokuapp.com/api/login', {
    method: 'post',
+   credentials: 'include',
    headers: {'Content-Type':'application/json'},
    body: JSON.stringify({
      "email": document.getElementById("email").value,
@@ -20,17 +21,13 @@ class Login extends React.Component {
    })
      .then(response => response.json())
      .then(res => {
-        switch (res) {
-          case "clave invalida":
-            alert("clave invalida");
-            break;
-          case "ok":
-            alert("sesion iniciada");
-            this.props.history.push("/hueprint/");
-            break;
-         default:
-           alert("sesion iniciada");
-           break;
+       //console.log(res);
+       if(res.isLoggedIn){
+         //alert("Signed in");
+         this.props.history.push("/hueprint/usuario");
+       }
+       else{
+         alert("Usuario o contraseña inválida");
        }
      })
      .catch(err => console.log(err));
@@ -42,16 +39,16 @@ class Login extends React.Component {
         <div className="row burbujas" style={{height: "100vh", display: "flex", flexFlow: "row wrap", justifyContent: "center", alignItems: "center"}}>
           <div className="loginForm">
             <h2>Iniciar sesión</h2><br/>
-              <form>
+              <form onSubmit={this.handleSubmit}>
                 <div className="form-group">
-                  <label htmlFor="email">Email address:</label>
-                  <input type="email" className="form-control" id="email"/>
+                  <label htmlFor="email">Correo electrónico:</label>
+                  <input type="email" className="form-control" id="email" name="email"/>
                 </div>
                 <div className="form-group">
-                  <label htmlFor="pwd">Password:</label>
-                  <input type="password" className="form-control" id="pwd"/>
+                  <label htmlFor="pwd">Contraseña:</label>
+                  <input type="password" className="form-control" id="pwd" name="password"/>
                 </div>
-                <center><button type="submit" onClick={this.handleSubmit} className="btn btn-default">Submit</button></center>
+                <center><button type="submit" className="btn btn-default">Submit</button></center>
               </form>
           </div>
         </div>
