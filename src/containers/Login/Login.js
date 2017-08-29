@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import { Redirect } from "react-router-dom";
 import "./Login.css";
 
 class Login extends React.Component {
@@ -25,6 +26,7 @@ class Login extends React.Component {
             break;
           case "ok":
             alert("sesion iniciada");
+            this.props.history.push("/hueprint/");
             break;
          default:
            alert("sesion iniciada");

@@ -1,5 +1,7 @@
 import React, { PropTypes } from 'react';
 import "./Registro.css";
+import { Redirect } from "react-router-dom";
+
 
 class Registro extends React.Component {
   constructor(props){
@@ -21,14 +23,21 @@ class Registro extends React.Component {
      .then(response => response.json())
      .then(res => {
        console.log(res);
-       switch(res.constraint) {
-         case "usuario_pkey":
-          alert("El usuario ingresado ya existe");
-          break;
-         default:
-          alert("Usuario creado exitosamente")
-          break;
-       }
+      if(res.constraint) {
+        switch(res.constraint) {
+          case "usuario_pkey":
+           alert("El usuario ingresado ya existe");
+           break;
+          default:
+           alert("Error. Contacte a un administrador para mas información.");
+           break;
+        }
+      }
+      else {
+        alert("Usuario creado exitosamente");
+        <Redirect push to="/hueprint/"/>
+      }
+
      })
      .catch(err => console.log(err));
   };
