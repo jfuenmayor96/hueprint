@@ -11,7 +11,7 @@ class Registro extends React.Component {
 
   handleSubmit(event){
    event.preventDefault();
-   fetch('/api/registro', {
+   fetch('https://hueprint.herokuapp.com/api/registro', {
    method: 'post',
    headers: {'Content-Type':'application/json'},
    body: JSON.stringify({
@@ -35,7 +35,7 @@ class Registro extends React.Component {
       }
       else {
         alert("Usuario creado exitosamente");
-        <Redirect push to="/hueprint/"/>
+        this.props.history.push("/hueprint/");
       }
 
      })
@@ -61,7 +61,7 @@ class Registro extends React.Component {
                   <label htmlFor="huella">Huella:</label>
                   <input type="huella" className="form-control" id="huella"/>
                 </div>
-                <center><button type="submit" onClick={this.handleSubmit} className="btn btn-default">Submit</button></center>
+                <center><button type="submit" onClick={this.handleSubmit} className="btn btn-default">Crear usuario</button></center>
               </form>
           </div>
         </div>
