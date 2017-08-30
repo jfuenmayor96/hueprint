@@ -7,16 +7,19 @@ class Usuario extends React.Component{
     super(props);
     this.state = {
       "email": "",
-      "huella": ""
+      "huella": "",
+      "isLoggedIn": ""
     };
     this.query = undefined;
     this.categorias = ["Academias", "Artes", "Belleza y Salud", "Carros", "Cursos", "Deportes", "Empleos", "Entretenimiento", "Gastronomia", "Inmuebles", "Moda", "Profesionales", "Proyectos", "Servicios", "Tecnología"];
     this.ciudades = [];
+
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   componentWillMount(){
     /*Obtiene la información de la sesión del usuario*/
-    fetch("http://localhost:5000/api/sessions", {
+    fetch("https://hueprint.herokuapp.com/api/sessions", {
     method: 'GET',
     credentials: 'include',
     redirect: 'follow',
@@ -29,6 +32,16 @@ class Usuario extends React.Component{
     .then(response => response.json())
     .then(res => {
       this.setState({"email": res.email, "huella": res.huella});
+
+      if(res.isLoggedIn === undefined){
+        this.props.history.push("/hueprint/login");
+      }
+      else{
+        document.getElementById("usuario").style.display = "inline-block";
+        document.getElementById("logout").style.display = "inline-block";
+        document.getElementById("login").style.display = "none";
+        document.getElementById("registro").style.display = "none";
+      }
     })
     .catch(err => console.log(err));
 
@@ -52,7 +65,8 @@ class Usuario extends React.Component{
         else{
           if(res){
             this.query = res;
-            console.log(this.query);
+            //console.log("query: ");
+            //console.log(this.query);
             document.getElementById("logo").value = res.logo;
             document.getElementById("categoria").value = res.categoria;
             document.getElementById("descripcion").value = res.descripcion;
@@ -73,8 +87,49 @@ class Usuario extends React.Component{
       estados.map(estado => {
       estado.ciudades.map(ciudad => this.ciudades.push(ciudad))});
       this.ciudades.sort();
-
   }
+
+
+
+  handleSubmit(event){
+   event.preventDefault();
+   fetch('https://hueprint.herokuapp.com/api/actualizarHuella', {
+   method: 'post',
+   headers: {'Content-Type':'application/json'},
+   body: JSON.stringify({
+     "email": this.state.email,
+     "nombre": document.getElementById("nombre").value,
+     "logo": document.getElementById("logo").value,
+     "categoria": document.getElementById("categoria").value,
+     "descripcion": document.getElementById("descripcion").value,
+     "direccion": document.getElementById("direccion").value,
+     "telefono": document.getElementById("telefono").value,
+     "twitter": document.getElementById("twitter").value,
+     "instagram": document.getElementById("instagram").value,
+     "pinterest": document.getElementById("pinterest").value,
+     "facebook": document.getElementById("facebook").value,
+     "estado": document.getElementById("estado").value,
+     "ciudad": document.getElementById("ciudad").value
+   })
+   })
+     .then(response => response.json())
+     .then(res => {
+       console.log(res);
+      if(res.constraint) {
+        alert("Hubo un error actualizando su información. Contacte con un administrador.")
+        console.log(res.constraint);
+      }
+      else {
+        if(res === "ok") {
+          alert("Información actualizada exitosamente.");
+        }
+        else{
+          alert("Hubo un error al actualizar la información. Contacte con un administrador.")
+        }
+      }
+     })
+     .catch(err => console.log(err));
+  };
 
 
   render(){
