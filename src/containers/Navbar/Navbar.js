@@ -10,7 +10,7 @@ class Navbar extends Component {
 
     cerrarSesion(e) {
       e.preventDefault();
-      alert("entre!");
+      //alert("entre!");
       fetch("https://hueprint.herokuapp.com/api/logout", {
       method: 'GET',
       credentials: 'include',
