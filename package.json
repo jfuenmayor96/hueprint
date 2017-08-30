@@ -23,5 +23,5 @@
     "eject": "react-scripts eject",
     "deploy": "npm run build && gh-pages -d /build"
   },
-"proxy": "http://localhost:5000"
+  "proxy": "http://localhost:5000"
 }
