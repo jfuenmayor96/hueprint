@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import "./Registro.css";
-import { Redirect } from "react-router-dom";
+import { Redirect, withRouter } from "react-router-dom";
 
 
 class Registro extends React.Component {
@@ -70,4 +70,5 @@ class Registro extends React.Component {
   }
 }
 
+const ShowTheLocationWithRouter = withRouter(Registro);
 export default Registro;
