@@ -84,7 +84,7 @@ class Login extends React.Component {
         this.setState({"email": res.email, "huella": res.huella});
 
         if(res.isLoggedIn != undefined){
-          this.props.history.push("/hueprint/usuario");
+          this.props.history.push("/hueprint/");
 
         }
       })

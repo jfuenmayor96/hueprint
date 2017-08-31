@@ -35,7 +35,7 @@ class Registro extends React.Component {
       }
       else {
         alert("Usuario creado exitosamente");
-        this.props.history.push("/hueprint/");
+        this.props.history.push("/hueprint/usuario");
       }
 
      })
